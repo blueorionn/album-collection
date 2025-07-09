@@ -1,8 +1,5 @@
-CREATE TABLE 
-    IF NOT EXISTS sessions (
-        session_id VARCHAR(36) PRIMARY KEY,
-        user_id VARCHAR(36),
-        username VARCHAR(255),
-        creation_date DATETIME,
-        expiry_date DATETIME
-    );
+CREATE TABLE sessions (
+  id VARCHAR(128) NOT NULL PRIMARY KEY,
+  data TEXT NOT NULL,
+  last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
