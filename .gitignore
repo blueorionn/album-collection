@@ -16,3 +16,6 @@ Thumbs.db
 
 # Ignore composer lock file
 /composer.lock
+
+# Ignore todo
+/todo
