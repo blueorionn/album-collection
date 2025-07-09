@@ -1,0 +1,12 @@
+{
+    "name": "swadhin/album-collection",
+    "description": "Music Album Collection Site",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AlbumCollection\\": "src/"
+        }
+    },
+    "require": {}
+}
