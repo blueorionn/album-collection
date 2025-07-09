@@ -9,6 +9,6 @@ class HomeController
         // fetching data from home page
         $stmt = $GLOBALS['pdo']->query("SELECT * FROM music");
         $albums = $stmt->fetchAll();
-        require_once __DIR__ . '/../../views/home.php';
+        include __DIR__ . '/../../views/home.php';
     }
 }
