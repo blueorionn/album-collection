@@ -42,6 +42,15 @@ Access is restricted to logged-in users only. Built with **Bootstrap 5**, **Comp
    php -S localhost:8000 -t public
    ```
 
+5. **Login**
+
+   Use credentials:
+
+   ```bash
+   Username: ray
+   Password: admin
+   ```
+
 ## License
 
 This project is released under the MIT License.

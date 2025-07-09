@@ -8,3 +8,24 @@ CREATE TABLE
         role VARCHAR(255),
         created_at DATETIME
     );
+
+INSERT INTO
+    users (
+        id,
+        first_name,
+        last_name,
+        username,
+        password,
+        role,
+        created_at
+    )
+VALUES
+    (
+        '1c83c337-1061-4238-8dc7-0fd0c517fd6f',
+        'ray',
+        '',
+        'ray',
+        '$2b$12$9d9nAunm7j0Vhqt8KDifDuPHHFiP1vswH9gW4L9Jg.lWhaszRibrm',
+        'admin',
+        NOW()
+    )
