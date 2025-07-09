@@ -51,7 +51,7 @@ class Router
         // If handler not found throw error
         if (!$handler) {
             http_response_code(404);
-            echo "404 Not Found";
+            include __DIR__ . '/../views/handlers/404.php';
             return;
         }
 
