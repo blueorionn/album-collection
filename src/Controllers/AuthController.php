@@ -19,8 +19,9 @@ class AuthController
         $stmt->execute([$username]);
         $user = $stmt->fetch();
 
+        // check if user exists. If does redirect to homepage and store session
         if ($user && password_verify($password, $user['password'])) {
-            $_SESSION['user'] = $user['username'];
+            $_SESSION['user'] = $user['id'];
             header('Location: /');
             exit;
         } else {
