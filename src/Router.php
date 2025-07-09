@@ -22,6 +22,20 @@ class Router
     }
 
     /**
+     * Registers a POST route.
+     *
+     * @param string $uri     The URI (e.g., '/', '/about', '/products').
+     * @param string $handler A string in the format "ClassName@methodName"
+     * that will handle this route.
+     */
+    public function post($uri, $handler)
+    {
+        // Adds the given URI and handler to the 'POST' part of the $routes array.
+        // Example: $this->routes['POST']['/login'] = 'AuthController@login';
+        $this->routes['POST'][$uri] = $handler;
+    }
+
+    /**
      * Dispatches the incoming request to the appropriate handler.
      */
     public function dispatch()
