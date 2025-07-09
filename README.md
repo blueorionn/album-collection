@@ -3,6 +3,8 @@
 A simple PHP application that displays music albums from a MySQL database.  
 Access is restricted to logged-in users only. Built with **Bootstrap 5**, **Composer**, and follows a clean MVC-like structure.
 
+⚠️ This project is created solely for fun and learning don't use it in production.
+
 ## Requirements
 
 - PHP 8.0+
