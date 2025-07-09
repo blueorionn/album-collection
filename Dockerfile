@@ -1,6 +1,9 @@
 # Dockerfile
 FROM php:8.2-apache
 
+# Set ServerName to suppress warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
