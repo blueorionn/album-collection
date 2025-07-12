@@ -23,6 +23,9 @@ COPY --from=vendor /app/vendor ./vendor
 # Copy the rest of your application
 COPY . .
 
+# Expose port 80
+EXPOSE 80
+
 # Point Apache at your public/ folder
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' \
     /etc/apache2/sites-available/000-default.conf \
